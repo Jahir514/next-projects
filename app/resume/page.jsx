@@ -242,12 +242,60 @@ const Resume = () => {
               </div>
             </TabsContent>
             {/* skills */}
-            <TabsContent value='skills' className='w-full'>
-              Skills
+            <TabsContent value='skills' className='w-full h-full'>
+              <div className='flex flex-col gap-[30px]'>
+                <div className='flex flex-col gap-[30px] text-center md:text-left'>
+                  <h3 className='text-3xl font-bold'>{skills.title}</h3>
+                  <p className='max-w-[600px] text-white/60 mx-auto md:mx-0'>
+                    {skills.description}
+                  </p>
+                </div>
+                <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
+                  {skills.skillLists.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group'>
+                              <div className='text-6xl transition-all duration-300 group-hover:text-accent'>
+                                {item.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent className='capitalize'>
+                              {item.name}
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </TabsContent>
             {/* about me */}
-            <TabsContent value='about' className='w-full'>
-              About me
+            <TabsContent
+              value='about'
+              className='w-full text-center xl:text-left'
+            >
+              <div className='flex flex-col gap-[30px]'>
+                <h3 className='text-3xl font-bold'>{aboutData.title}</h3>
+                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
+                  {aboutData.description}
+                </p>
+                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-4 max-w-[720px] mx-auto xl:mx-0'>
+                  {aboutData.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className='flex items-center justify-center gap-4 xl:justify-start'
+                      >
+                        <span className='text-white/60'>{item.fieldName}</span>
+                        <span className='text-xl'>{item.value}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>

@@ -1,3 +1,17 @@
+'use client'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
+import Link from 'next/link'
+import Image from 'next/image'
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
 const Work = () => {
   return <div>Work Page</div>
 }
