@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-B6HPNNF2SQ`}
         />
-        <Script>
+        <Script id="googel-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
