@@ -4,15 +4,15 @@ import { FiFacebook, FiLinkedin, FiGithub, FiYoutube } from 'react-icons/fi'
 const socials = [
   {
     icon: <FiFacebook />,
-    path: '',
+    path: 'https://www.facebook.com/jahir.shohag.50',
   },
   {
     icon: <FiLinkedin />,
-    path: '',
+    path: 'https://www.linkedin.com/in/jahir-hasan-91b02b128/',
   },
   {
     icon: <FiGithub />,
-    path: '',
+    path: 'https://github.com/Jahir514',
   },
   {
     icon: <FiYoutube />,
@@ -25,7 +25,13 @@ const Social = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((social, index) => {
         return (
-          <Link href={social.path} key={index} className={iconStyles}>
+          <Link
+            href={social.path}
+            key={index}
+            className={iconStyles}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             {social.icon}
           </Link>
         )

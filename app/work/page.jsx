@@ -186,14 +186,14 @@ const Work = () => {
                       <div className='absolute top-0 bottom-0 z-10 w-full h-full bg-black/10'></div>
                       {/* image */}
                       <div className='relative w-full h-full'>
-                        <a href={project.live} target='_blank' rel=''>
+                        <Link href={project.live} target='_blank' rel=''>
                           <Image
                             src={project.image}
                             fill
                             className='object-cover object-top cursor-pointer'
                             alt='project-img'
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </SwiperSlide>
