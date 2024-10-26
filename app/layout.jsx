@@ -23,10 +23,11 @@ export default function RootLayout({ children }) {
         className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Script
-          async
           src={`https://www.googletagmanager.com/gtag/js?id=G-B6HPNNF2SQ`}
+          id="googel-analytics-1"
+          strategy="afterInteractive"
         />
-        <Script id="googel-analytics" strategy="afterInteractive">
+        <Script id="googel-analytics-2" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
