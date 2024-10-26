@@ -19,9 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
-      >
+      <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-B6HPNNF2SQ`}
           id="googel-analytics-1"
@@ -34,6 +32,10 @@ export default function RootLayout({ children }) {
 
           gtag('config', 'G-B6HPNNF2SQ');`}
         </Script>
+      </head>
+      <body
+        className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
+      >
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
