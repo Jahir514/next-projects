@@ -8,28 +8,28 @@ const services = [
     serial: 1,
     title: 'Web Development',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facilis aspernatur, nisi illo adipisci voluptatum minima amet et a provident dignissimos',
+      'As a web development service provider, I specialize in creating dynamic and responsive websites using HTML, CSS, and JavaScript. Leveraging Node.js and Express for robust back-end solutions, I ensure seamless performance and scalability. I also utilize Tailwind CSS for efficient styling, allowing for customizable and visually appealing designs. My approach focuses on delivering user-friendly experiences tailored to clients’ needs, enhancing their online presence and engagement.',
     href: '',
   },
   {
     serial: 2,
     title: 'Web Design',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facilis aspernatur, nisi illo adipisci voluptatum minima amet et a provident dignissimos',
+      'As a web design service provider, I create visually stunning and user-friendly websites using HTML, CSS, and JavaScript. By leveraging frameworks like Tailwind CSS and Bootstrap, I ensure responsive and modern designs that enhance user experience across all devices. My focus is on delivering tailored solutions that meet client needs while maintaining aesthetic appeal and functionality.',
     href: '',
   },
   {
     serial: 3,
-    title: 'SEO',
+    title: 'Email Template Design',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facilis aspernatur, nisi illo adipisci voluptatum minima amet et a provident dignissimos',
+      'As an email template design service provider, I specialize in crafting visually appealing and responsive email templates using HTML, CSS, and JavaScript. My designs ensure compatibility across various email clients and devices, providing a seamless experience for users. By focusing on clean code and engaging layouts, I help businesses effectively communicate their messages and enhance their marketing campaigns.',
     href: '',
   },
   {
     serial: 4,
-    title: 'App Development',
+    title: 'Bug Fixing',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facilis aspernatur, nisi illo adipisci voluptatum minima amet et a provident dignissimos',
+      'As a bug-fixing service provider for React/Vue applications, I specialize in identifying and resolving issues to enhance performance and user experience. With a thorough understanding of Reacts/Vue component architecture and state management, I efficiently troubleshoot bugs, optimize code, and implement best practices to ensure your application runs smoothly.',
     href: '',
   },
 ]

@@ -21,7 +21,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 const aboutData = {
   title: 'About Me',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem magnam, voluptatibus iusto temporibus delectus at atque alias.',
+    'I am a skilled full-stack developer with over 3 years of experience in web development, specializing in HTML, CSS, JavaScript, Express, Node.js, Vue, React, Next.js. With a strong educational foundation, including an MSc from Comilla University and advanced training in full-stack development from Coders Trust, bring expertise and dedication to building efficient and user-friendly applications.',
   info: [
     {
       fieldName: 'Name',
@@ -59,7 +59,7 @@ const experiences = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experiences',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem magnam, voluptatibus iusto temporibus delectus at atque alias.',
+    'With over 3 years of experience as a full-stack developer. My work spans both front-end and back-end development, delivering seamless, dynamic, and user-friendly experiences from concept to deployment. I have created APIs for the POS system, product management system, product transaction system, report system and working on creating APIs for the account system of the company.',
   items: [
     {
       company: 'Amana Group LTD',
@@ -83,8 +83,7 @@ const experiences = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My Education',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem magnam, voluptatibus iusto temporibus delectus at atque alias.',
+  description: 'My educational qualifications are described below.',
   items: [
     {
       institution: 'Comilla University',
@@ -112,7 +111,7 @@ const education = {
 const skills = {
   title: 'My Skills',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatem magnam, voluptatibus iusto temporibus delectus at atque alias.',
+    'I specialize in building robust web applications using HTML, CSS, JavaScript, Express, Node.js, Vue, React, and Next.js, bootstrap, tailwind.',
   skillLists: [
     {
       icon: <FaHtml5 />,

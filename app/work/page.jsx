@@ -16,10 +16,10 @@ import WorkSliderBtns from '@/components/WorkSliderBtns'
 const works = [
   {
     num: '01',
-    category: 'Frontend',
+    category: 'FullStack',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione ducimus sequi eveniet ab excepturi? Porro quas magni.',
+      'E-commerce website for amana group ltd. Display product based on category. Product add to cart system. Product delivery system. Search and filter product etc feature has in this project.',
     stack: [
       {
         name: 'HTML 5',
@@ -30,41 +30,32 @@ const works = [
       {
         name: 'JavaScript',
       },
-    ],
-    image: '/assets/work/',
-    live: '',
-    github: '',
-  },
-  {
-    num: '02',
-    category: 'fullstack',
-    title: 'project 2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione ducimus sequi eveniet ab excepturi? Porro quas magni.',
-    stack: [
       {
-        name: 'Next.js',
+        name: 'Vue',
       },
       {
-        name: 'Tailwind css',
+        name: 'Bootstrap',
       },
       {
         name: 'Node.js',
       },
+      {
+        name: 'express.js',
+      },
     ],
-    image: '/assets/work/',
-    live: '',
+    image: '/assets/work/big-bazar-img.png',
+    live: 'https://amanabigbazar.com',
     github: '',
   },
   {
-    num: '03',
+    num: '02',
     category: 'Frontend',
-    title: 'project 3',
+    title: 'project 2',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione ducimus sequi eveniet ab excepturi? Porro quas magni.',
+      'An informative website for amana international sister concern of amana group ltd. Website is used to display brand, category, services, blog of the concern.',
     stack: [
       {
-        name: 'Next.js',
+        name: 'HTML 5',
       },
       {
         name: 'Css 3',
@@ -72,9 +63,36 @@ const works = [
       {
         name: 'JavaScript',
       },
+      {
+        name: 'Bootstrap',
+      },
     ],
-    image: '/assets/work/',
-    live: '',
+    image: '/assets/work/ailfood-net.png',
+    live: 'https://ailfood.net/',
+    github: '',
+  },
+  {
+    num: '03',
+    category: 'Frontend',
+    title: 'project 3',
+    description:
+      'An informative website for amana agro sister concern of amana group ltd. Website is used to display brand, category, services, blog of the concern.',
+    stack: [
+      {
+        name: 'HTML 5',
+      },
+      {
+        name: 'Css 3',
+      },
+      {
+        name: 'JavaScript',
+      },
+      {
+        name: 'Bootstrap',
+      },
+    ],
+    image: '/assets/work/amanaagrobd.png',
+    live: 'https://amanaagrobd.com/',
     github: '',
   },
 ]
@@ -111,7 +129,7 @@ const Work = () => {
               {/* project description */}
               <p className='text-white/60'>{project.description}</p>
               {/* stack */}
-              <ul className='flex gap-4'>
+              <ul className='flex flex-wrap gap-4'>
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className='text-xl text-accent'>
@@ -129,15 +147,18 @@ const Work = () => {
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className='w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white/5 group'>
-                        <BsArrowUpRight className='text-2xl text-white group-hover:text-accent' />
+                      <TooltipTrigger className='w-[100px] h-[50px] rounded-lg flex items-center justify-center bg-white/5 group'>
+                        {/* <BsArrowUpRight className='text-2xl text-white group-hover:text-accent' /> */}
+                        <span className='flex items-center justify-center text-sm text-white group-hover:text-accent'>
+                          Let's Go
+                        </span>
                       </TooltipTrigger>
                       <TooltipContent>Live Link</TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* github link */}
-                <Link href={project.github}>
+                {/* <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white/5 group'>
@@ -146,7 +167,7 @@ const Work = () => {
                       <TooltipContent>github Link</TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -165,12 +186,14 @@ const Work = () => {
                       <div className='absolute top-0 bottom-0 z-10 w-full h-full bg-black/10'></div>
                       {/* image */}
                       <div className='relative w-full h-full'>
-                        <Image
-                          src={project.image}
-                          fill
-                          className='object-cover'
-                          alt='project-img'
-                        />
+                        <a href={project.live} target='_blank' rel=''>
+                          <Image
+                            src={project.image}
+                            fill
+                            className='object-cover object-top cursor-pointer'
+                            alt='project-img'
+                          />
+                        </a>
                       </div>
                     </div>
                   </SwiperSlide>
