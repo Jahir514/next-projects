@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-B6HPNNF2SQ`}
-          id="googel-analytics-1"
           strategy="afterInteractive"
         />
         <Script id="googel-analytics-2" strategy="afterInteractive">
